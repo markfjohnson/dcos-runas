@@ -1,16 +1,26 @@
 {
-  "id": "/dept-b/runas-mesos-cmd",
-  "backoffFactor": 1.15,
-  "backoffSeconds": 1,
-  "cmd": "whoami",
+  "id": "/dept-b/ex3a-runas-mesos-python",
+  "cmd": "whoami && python file_writer.py -o /data/org_super_secret/fileoutput.txt",
   "container": {
     "type": "MESOS",
     "volumes": [],
     "docker": {
-      "image": "nginx",
+      "image": "markfjohnson/python",
       "forcePullImage": false,
       "parameters": []
     }
   },
+  "cpus": 1,
+  "disk": 0,
+  "fetch": [
+    {
+      "uri": "https://raw.githubusercontent.com/markfjohnson/dcos-runas/master/file_writer.py",
+      "extract": false,
+      "executable": false,
+      "cache": false
+    }
+  ],
+  "instances": 1,
+  "mem": 128,
   "user": "dcosuser"
 }

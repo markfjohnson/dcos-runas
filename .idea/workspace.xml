@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2de8dc0-4f21-4acd-b829-ee8bc98f97cf" name="Default" comment="" />
+    <list default="true" id="f2de8dc0-4f21-4acd-b829-ee8bc98f97cf" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/define_dcosuser.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/define_host_directories.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex3a-runas-noway.json" beforeDir="false" afterPath="$PROJECT_DIR$/ex3a-runas-noway.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_writer.py" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,19 +23,46 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="439">
-                <caret line="73" column="92" selection-start-line="73" selection-start-column="92" selection-end-line="73" selection-end-column="92" />
+              <first_editor relative-caret-position="306">
+                <caret line="14" column="314" selection-start-line="14" selection-start-column="314" selection-end-line="14" selection-end-column="314" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ex3a-runas-noway.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ex3a-runas-noway.json">
+      <file leaf-file-name="define_dcosuser.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/define_dcosuser.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-line="15" selection-end-column="1" />
+              <caret selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="define_host_directories.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/define_host_directories.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="27" lean-forward="true" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ex3a-runas-noway.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ex3a-runas-noway.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="82" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_writer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file_writer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -37,16 +71,16 @@
         <entry file="file://$PROJECT_DIR$/runas-mesos-docker-image.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-line="15" selection-end-column="1" />
+              <caret selection-end-line="25" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello-world.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hello-world.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello-world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="15" />
+            <state relative-caret-position="51">
+              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -90,16 +124,28 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>usermod</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mesos-cmd-runas-user.json" />
         <option value="$PROJECT_DIR$/runas-mesos-cmd.json" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Docker_image/Dockerfile" />
         <option value="$PROJECT_DIR$/Docker_image/README.md" />
-        <option value="$PROJECT_DIR$/runas-mesos-docker-image.json" />
         <option value="$PROJECT_DIR$/hello-world.py" />
+        <option value="$PROJECT_DIR$/runas-mesos-docker-image.json" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/define_dcosuser.sh" />
+        <option value="$PROJECT_DIR$/define_host_directories.sh" />
+        <option value="$PROJECT_DIR$/file_writer.py" />
+        <option value="$PROJECT_DIR$/ex3a-runas-noway.json" />
       </list>
     </option>
   </component>
@@ -118,6 +164,7 @@
     <option name="width" value="3726" />
     <option name="height" value="2118" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -223,12 +270,27 @@
       <workItem from="1525655097073" duration="2064000" />
       <workItem from="1525731900416" duration="752000" />
       <workItem from="1525789175432" duration="2856000" />
-      <workItem from="1525800333166" duration="7896000" />
+      <workItem from="1525800333166" duration="12100000" />
     </task>
+    <task id="LOCAL-00001" summary="Completed the example #2">
+      <created>1525814531635</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1525814531635</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create python file writer sample program">
+      <created>1525816834877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1525816834877</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13568000" />
+    <option name="totallyTimeSpent" value="17772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="9" width="1242" height="706" extended-state="0" />
@@ -242,7 +304,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -270,6 +332,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Completed the example #2" />
+    <MESSAGE value="Create python file writer sample program" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create python file writer sample program" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -347,23 +414,6 @@
     <entry file="file://$PROJECT_DIR$/mesos-cmd-runas-user.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="439">
-            <caret line="73" column="92" selection-start-line="73" selection-start-column="92" selection-end-line="73" selection-end-column="92" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ex3a-runas-noway.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/runas-mesos-cmd.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -388,17 +438,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runas-mesos-docker-image.json">
+    <entry file="file://$PROJECT_DIR$/hello-world.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="51">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello-world.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="14" column="314" selection-start-line="14" selection-start-column="314" selection-end-line="14" selection-end-column="314" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/define_host_directories.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" lean-forward="true" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/define_dcosuser.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="2" selection-end-column="15" />
+          <caret selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runas-mesos-docker-image.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex3a-runas-noway.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="82" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="82" />
         </state>
       </provider>
     </entry>
