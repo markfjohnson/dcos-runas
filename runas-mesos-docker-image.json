@@ -1,8 +1,6 @@
 {
   "id": "/dept-b/ex2-runas-mesos-cmd",
-  "backoffFactor": 1.15,
-  "backoffSeconds": 1,
-  "cmd": "whoami",
+  "cmd": "whoami && python hello-world.py",
   "container": {
     "type": "MESOS",
     "volumes": [],
@@ -12,5 +10,17 @@
       "parameters": []
     }
   },
+  "cpus": 1,
+  "disk": 0,
+  "fetch": [
+    {
+      "uri": "https://raw.githubusercontent.com/markfjohnson/dcos-runas/199438ffaf9db6640317b08e64a1acacf6345410/hello-world.py",
+      "extract": false,
+      "executable": false,
+      "cache": false
+    }
+  ],
+  "instances": 1,
+  "mem": 128,
   "user": "dcosuser"
 }

@@ -18,7 +18,7 @@ The examples described here cover the following use cases:
 For this example we we will utilize the file ```runas-mesos-cmd.json``` from within this registry.
  
  The full Marathon JSON example is shown below:
- ```aidl
+ ```json
 {
   "id": "/dept-b/runas-mesos-cmd",
   "instances": 1,
@@ -45,27 +45,39 @@ We will then go to the Apache MESOS screen to check on the stdout for our new ap
 As we see in the screen clip above, the output from the 'whoami' command is as expected 'dcosuser'.
 
 ## Example #2: Marathon App running a Docker image within UCR
-Building on Example #1, we now want to do the same sort of RunAS functionality only this time we wish to do this leveraging an existing Docker Image file, but still running with the MESO container (UCR) type.  In this case as with any other MESOS UCR App, we will specify the docker image file as shown using the nginx docker image file as presented below:
+Building on Example #1, we now want to do the same sort of RunAS functionality only this time we wish to do this leveraging an existing Docker Image file, but still running with the MESO container (UCR) type.  In this case as with any other MESOS UCR App, we will specify the docker image file as shown using the python docker image file as presented below:
 
-```aidl
+
+
+```json
 {
-  "id": "/dept-b/runas-mesos-cmd",
-  "backoffFactor": 1.15,
-  "backoffSeconds": 1,
-  "cmd": "whoami",
+  "id": "/dept-b/ex2-runas-mesos-cmd",
+  "cmd": "whoami && python hello-world.py",
   "container": {
     "type": "MESOS",
     "volumes": [],
     "docker": {
-      "image": "nginx",
+      "image": "markfjohnson/python",
       "forcePullImage": false,
       "parameters": []
     }
   },
+  "cpus": 1,
+  "disk": 0,
+  "fetch": [
+    {
+      "uri": "https://raw.githubusercontent.com/markfjohnson/dcos-runas/199438ffaf9db6640317b08e64a1acacf6345410/hello-world.py",
+      "extract": false,
+      "executable": false,
+      "cache": false
+    }
+  ],
+  "instances": 1,
+  "mem": 128,
   "user": "dcosuser"
 }
 ```
-As we see above the "user" command is defined in the exact same way as for example #1.  The container section is specifying the docker image file "nginx".  For example purposes, we are just calling the 'whoami' linux function and like the prior example we will see the container is running as 'dcosuser'.
+As we see above the "user" command is defined in the exact same way as for example #1.  An **important difference** between the prior example and this one is here the Linux user 'docuser' is defined within the docker image itself.  In the Docker image markfjohnson/python the user 'dcosuser' was defined as part of the docker image build process.  The benefit of the MESOS UCR container as we see here is we can inject files such as the python hello-world.py file and also control the logged in user right into the container.  This functionality is not possible with the Docker daemon in DC/OS.
 
 ## Example #3: Using the RunAS functionality to restrict host volume access.
 Ok, so if you are still reading this maybe you find the functionality kinda cool.  But you are also probably also wondering **SO WHAT**?  To answer this question, consider a situation where you need to restrict the container to a specific set of Linux resources.  In a traditional Machine based (non-container) execution environment problem would simply be solved through the leverage of traditional Linux permissioning to the file system and other resources.  But containers out of the box do not run this way.  The solution provided by Apache Marathon on DC/OS is submit a specific user id along with the container definition.  Then any resources which the container tried to access from the host are only acceessible if the "user" has the appropriate permissions.
