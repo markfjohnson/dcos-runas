@@ -1,0 +1,16 @@
+{
+  "id": "/dept-b/ex2-runas-mesos-cmd",
+  "backoffFactor": 1.15,
+  "backoffSeconds": 1,
+  "cmd": "whoami",
+  "container": {
+    "type": "MESOS",
+    "volumes": [],
+    "docker": {
+      "image": "markfjohnson/python",
+      "forcePullImage": false,
+      "parameters": []
+    }
+  },
+  "user": "dcosuser"
+}

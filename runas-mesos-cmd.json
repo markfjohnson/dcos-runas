@@ -1,0 +1,18 @@
+{
+  "id": "/dept-b/runas-mesos-cmd",
+  "instances": 1,
+  "portDefinitions": [],
+  "container": {
+    "type": "MESOS",
+    "volumes": []
+  },
+  "cpus": 0.1,
+  "mem": 128,
+  "requirePorts": false,
+  "networks": [],
+  "healthChecks": [],
+  "fetch": [],
+  "constraints": [],
+  "cmd": "whoami && tee file && sleep 1000",
+  "user": "dcosuser"
+}
