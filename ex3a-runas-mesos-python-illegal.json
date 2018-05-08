@@ -1,0 +1,33 @@
+{
+  "id": "/dept-b/ex3a-runas-mesos-python-illegal",
+  "cmd": "ls -lt && ls -lt /data && whoami && python file_writer.py -o /data/org_super_secret/fileoutput.txt && sleep 300",
+  "container": {
+    "type": "MESOS",
+    "volumes": [
+      {
+        "containerPath": "/data",
+        "hostPath": "/data",
+        "mode": "RW"
+      }
+    ],
+    "docker": {
+      "image": "markfjohnson/python",
+      "forcePullImage": false,
+      "parameters": []
+    }
+  },
+  "cpus": 0.2,
+  "disk": 0,
+  "fetch": [
+    {
+      "uri": "https://raw.githubusercontent.com/markfjohnson/dcos-runas/master/file_writer.py",
+      "extract": false,
+      "executable": false,
+      "cache": false
+    }
+  ],
+  "instances": 1,
+  "mem": 128,
+  "user": "dcosuser"
+
+}
